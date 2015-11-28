@@ -60,9 +60,9 @@ if os.path.exists(favorites)==True:
     FAV = open(favorites).read()
 else: FAV = []
 
-SOURCES = [{"url": "", "fanart": "https://dl.dropbox.com/s/31ovbf0ks6wcsuj/PRINCIPAL%20RUFOTHEONE%20ADDON.XML.xml", "genre": "Tv Live", "date": "08.01.2015", "credits": "mariocs", "thumbnail": "https://dl.dropbox.com/s/lg0xhprbwnabm3h/MAGNETO%20POSTER.jpg"}]
+SOURCES = [{"url": "https://dl.dropbox.com/s/5wowxo4phnq7z56/PRINCIPALRETROADDONS.xml.xml", "fanart": "", "genre": "Tv Live", "date": "08.01.2015", "credits": "mariocs", "thumbnail": "https://dl.dropbox.com/s/lg0xhprbwnabm3h/MAGNETO%20POSTER.jpg"}]
 
-# https://dl.dropbox.com/s/75lqhzndw8i9kg6/TV%20SERIES%20RUFOTHEONE.XML.xml
+# https://dl.dropbox.com/s/75lqhzndw8i9kg6/TV%20SERIES%20RUFOTHEONE.XML.xml         https://dl.dropbox.com/s/31ovbf0ks6wcsuj/PRINCIPAL%20RUFOTHEONE%20ADDON.XML.xml
 # https://dl.dropbox.com/s/mc058yrs6j0mfsr/MAGNETO%20FANART.jpg                       
 
 """
