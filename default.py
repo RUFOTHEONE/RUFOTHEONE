@@ -41,7 +41,7 @@ if REMOTE_DBG:
         sys.exit(1)  
 
 
-addon = xbmcaddon.Addon('plugin.video.rufhofalso')
+addon = xbmcaddon.Addon('plugin.video.RUFOTHEONE')
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
@@ -60,10 +60,10 @@ if os.path.exists(favorites)==True:
     FAV = open(favorites).read()
 else: FAV = []
 
-SOURCES = [{"url": "https://dl.dropbox.com/s/5wowxo4phnq7z56/PRINCIPALRETROADDONS.xml.xml?", "fanart": "", "genre": "Tv Live", "date": "08.01.2015", "credits": "mariocs", "thumbnail": "http://i61.tinypic.com/mufy55.jpg"}]
+SOURCES = [{"url": "https://dl.dropbox.com/s/5wowxo4phnq7z56/PRINCIPALRETROADDONS.xml.xml?", "fanart": "", "genre": "Tv Live", "date": "08.01.2015", "credits": "mariocs", "thumbnail": "https://dl.dropbox.com/s/lg0xhprbwnabm3h/MAGNETO%20POSTER.jpg"}]
 
-# http://latino-webtv.com/iptv/logos/fanart.jpg
-# http://i61.tinypic.com/mufy55.jpg
+# https://dl.dropbox.com/s/75lqhzndw8i9kg6/TV%20SERIES%20RUFOTHEONE.XML.xml         
+# https://dl.dropbox.com/s/mc058yrs6j0mfsr/MAGNETO%20FANART.jpg                       
 
 """
 if os.path.exists(source_file)==True:
@@ -73,7 +73,7 @@ else: SOURCES = []
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[addon.latinowebtv-%s]: %s" %(addon_version, string))
+        xbmc.log("[addon.RUFOTHEONE-%s]: %s" %(addon_version, string))
 
 
 def makeRequest(url, headers=None):
@@ -89,11 +89,11 @@ def makeRequest(url, headers=None):
             addon_log('URL: '+url)
             if hasattr(e, 'code'):
                 addon_log('We failed with error code - %s.' % e.code)
-                xbmc.executebuiltin("XBMC.Notification(latinowebtv,We failed with error code - "+str(e.code)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(RUFOTHEONE,We failed with error code - "+str(e.code)+",10000,"+icon+")")
             elif hasattr(e, 'reason'):
                 addon_log('We failed to reach a server.')
                 addon_log('Reason: %s' %e.reason)
-                xbmc.executebuiltin("XBMC.Notification(latinowebtv,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(RUFOTHEONE,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
 
 def getSources():
         if os.path.exists(favorites) == True:
@@ -179,7 +179,7 @@ def addSource(url=None):
             b.close()
         addon.setSetting('new_url_source', "")
         addon.setSetting('new_file_source', "")
-        xbmc.executebuiltin("XBMC.Notification(latinowebtv,New source added.,5000,"+icon+")")
+        xbmc.executebuiltin("XBMC.Notification(RUFOTHEONE,New source added.,5000,"+icon+")")
         if not url is None:
             if 'xbmcplus.xb.funpic.de' in url:
                 xbmc.executebuiltin("XBMC.Container.Update(%s?mode=14,replace)" %sys.argv[0])
