@@ -60,7 +60,7 @@ if os.path.exists(favorites)==True:
     FAV = open(favorites).read()
 else: FAV = []
 
-SOURCES = [{"url": "https://dl.dropbox.com/s/2n1s4rd32yhnl75/RUFOTHEONE%20NUEVO.XML?", "fanart": "", "genre": "Tv Live", "date": "08.01.2015", "credits": "RUFOTHEONE", "thumbnail": "https://dl.dropbox.com/s/803qjurei23bemg/LOGO%20RUFOTHEONE.jpg"}]
+SOURCES = [{"url": "https://dl.dropbox.com/s/mq2ypc2akte0a6q/PRINCIPALRETROADDONS.xml.xml?", "fanart": "", "genre": "Tv Live", "date": "08.01.2015", "credits": "RUFOTHEONE", "thumbnail": "https://dl.dropbox.com/s/803qjurei23bemg/LOGO%20RUFOTHEONE.jpg"}]
 
 # http://latino-webtv.com/iptv/logos/fanart.jpg
 # http://i61.tinypic.com/mufy55.jpg
